@@ -8,7 +8,7 @@ jobs:
     runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2.0.0
     
     - uses: actions/cache@v1.0.3
       id: bundleCache
@@ -17,9 +17,6 @@ jobs:
         key: v1-gem-${{ hashFiles(format('{0}{1}', github.workspace, '/Gemfile.lock')) }}
         restore-keys: |
           v1-gem-${{ hashFiles(format('{0}{1}', github.workspace, '/Gemfile.lock')) }}
-      
-    - name: Select Xcode version
-      run: sudo xcode-select -s '/Applications/Xcode_11.app/Contents/Developer
     
     - name: bundle install
       if: steps.bundleCache.outputs.cache-hit != 'true'
