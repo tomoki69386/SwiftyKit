@@ -1,0 +1,28 @@
+name: Danger and SwiftLint
+
+on: [push]
+
+jobs:
+  danger_and_swiftlint:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2.0.0
+    
+    - uses: actions/cache@v1.0.3
+      id: bundleCache
+      with:
+        path: vendor/bundle
+        key: v1-gem-${{ hashFiles(format('{0}{1}', github.workspace, '/Gemfile.lock')) }}
+        restore-keys: |
+          v1-gem-${{ hashFiles(format('{0}{1}', github.workspace, '/Gemfile.lock')) }}
+    
+    - name: bundle install
+      if: steps.bundleCache.outputs.cache-hit != 'true'
+      run: bundle install --path vendor/bundle
+
+    - name: danger_and_swiftlint
+      env:
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+      run: bundle exec danger
