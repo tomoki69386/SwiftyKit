@@ -3,7 +3,7 @@ name: Danger and SwiftLint
 on: [push]
 
 jobs:
-  build:
+  danger_and_swiftlint:
 
     runs-on: macOS-latest
 
