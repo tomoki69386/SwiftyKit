@@ -100,8 +100,8 @@
 		B75976F823AB388D002AB328 /* SwiftyKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				B780C11723AC409400971DC0 /* Extension */,
 				B780C11623AC408A00971DC0 /* Common */,
+				B780C11723AC409400971DC0 /* Extension */,
 				B75976FB23AB388D002AB328 /* Info.plist */,
 				B75976F923AB388D002AB328 /* SwiftyKitTests.swift */,
 			);
@@ -135,6 +135,7 @@
 				B780C11823AC40A500971DC0 /* TableComponentTests.swift */,
 			);
 			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		B780C11723AC409400971DC0 /* Extension */ = {
