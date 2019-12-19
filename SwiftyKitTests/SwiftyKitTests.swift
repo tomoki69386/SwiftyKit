@@ -9,10 +9,5 @@
 import XCTest
 @testable import SwiftyKit
 
-private final class CommonCell: UITableViewCell { }
-
 class SwiftyKitTests: XCTestCase {
-    func testCommonCellReuseIdentifier() {
-        XCTFail(CommonCell.reuseIdentifier)
-    }
 }
