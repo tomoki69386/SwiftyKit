@@ -10,6 +10,7 @@
 		B75976F523AB388D002AB328 /* SwiftyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75976EB23AB388D002AB328 /* SwiftyKit.framework */; };
 		B75976FA23AB388D002AB328 /* SwiftyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75976F923AB388D002AB328 /* SwiftyKitTests.swift */; };
 		B75976FC23AB388D002AB328 /* SwiftyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B75976EE23AB388D002AB328 /* SwiftyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B759770723AB38F2002AB328 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770623AB38F2002AB328 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B75976F423AB388D002AB328 /* SwiftyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75976F923AB388D002AB328 /* SwiftyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyKitTests.swift; sourceTree = "<group>"; };
 		B75976FB23AB388D002AB328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B759770623AB38F2002AB328 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		B75976ED23AB388D002AB328 /* SwiftyKit */ = {
 			isa = PBXGroup;
 			children = (
+				B759770523AB38CE002AB328 /* Extension */,
 				B75976EE23AB388D002AB328 /* SwiftyKit.h */,
 				B75976EF23AB388D002AB328 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				B75976FB23AB388D002AB328 /* Info.plist */,
 			);
 			path = SwiftyKitTests;
+			sourceTree = "<group>";
+		};
+		B759770523AB38CE002AB328 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B759770623AB38F2002AB328 /* Reusable.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					B75976EA23AB388D002AB328 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					B75976F323AB388D002AB328 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B759770723AB38F2002AB328 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		B759770023AB388D002AB328 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AV9FQ3YF56;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki-sun.SwiftyKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		B759770123AB388D002AB328 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AV9FQ3YF56;
@@ -388,6 +404,7 @@
 		B759770323AB388D002AB328 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV9FQ3YF56;
 				INFOPLIST_FILE = SwiftyKitTests/Info.plist;
@@ -406,6 +423,7 @@
 		B759770423AB388D002AB328 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AV9FQ3YF56;
 				INFOPLIST_FILE = SwiftyKitTests/Info.plist;
