@@ -15,6 +15,10 @@
 		B759770B23AB3A38002AB328 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */; };
 		B759770D23AB3AF5002AB328 /* NibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770C23AB3AF5002AB328 /* NibInitializable.swift */; };
 		B759771023AB3D2A002AB328 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */; };
+		B780C11323AC3EFF00971DC0 /* ReusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11223AC3EFF00971DC0 /* ReusableTests.swift */; };
+		B780C11523AC403F00971DC0 /* TableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11423AC403F00971DC0 /* TableComponent.swift */; };
+		B780C11923AC40A500971DC0 /* TableComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11823AC40A500971DC0 /* TableComponentTests.swift */; };
+		B780C11B23AC424900971DC0 /* UIBarButtonItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11A23AC424900971DC0 /* UIBarButtonItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		B759770C23AB3AF5002AB328 /* NibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInitializable.swift; sourceTree = "<group>"; };
 		B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		B780C11223AC3EFF00971DC0 /* ReusableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTests.swift; sourceTree = "<group>"; };
+		B780C11423AC403F00971DC0 /* TableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponent.swift; sourceTree = "<group>"; };
+		B780C11823AC40A500971DC0 /* TableComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponentTests.swift; sourceTree = "<group>"; };
+		B780C11A23AC424900971DC0 /* UIBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,8 @@
 		B75976F823AB388D002AB328 /* SwiftyKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				B780C11623AC408A00971DC0 /* Common */,
+				B780C11723AC409400971DC0 /* Extension */,
 				B75976FB23AB388D002AB328 /* Info.plist */,
 				B75976F923AB388D002AB328 /* SwiftyKitTests.swift */,
 			);
@@ -105,7 +115,6 @@
 				B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */,
 				B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */,
 			);
-			name = Extension;
 			path = Extension;
 			sourceTree = "<group>";
 		};
@@ -114,8 +123,27 @@
 			children = (
 				B759770C23AB3AF5002AB328 /* NibInitializable.swift */,
 				B759770623AB38F2002AB328 /* Reusable.swift */,
+				B780C11423AC403F00971DC0 /* TableComponent.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B780C11623AC408A00971DC0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B780C11223AC3EFF00971DC0 /* ReusableTests.swift */,
+				B780C11823AC40A500971DC0 /* TableComponentTests.swift */,
+			);
+			name = Common;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B780C11723AC409400971DC0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B780C11A23AC424900971DC0 /* UIBarButtonItemTests.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B780C11523AC403F00971DC0 /* TableComponent.swift in Sources */,
 				B759770B23AB3A38002AB328 /* UICollectionView+Extension.swift in Sources */,
 				B759770723AB38F2002AB328 /* Reusable.swift in Sources */,
 				B759771023AB3D2A002AB328 /* UITableView+Extension.swift in Sources */,
@@ -240,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B780C11323AC3EFF00971DC0 /* ReusableTests.swift in Sources */,
 				B75976FA23AB388D002AB328 /* SwiftyKitTests.swift in Sources */,
+				B780C11923AC40A500971DC0 /* TableComponentTests.swift in Sources */,
+				B780C11B23AC424900971DC0 /* UIBarButtonItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
