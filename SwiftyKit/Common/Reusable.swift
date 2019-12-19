@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol Reusable: class {
+public protocol Reusable: class {
     static var reuseIdentifier: String { get }
 }
 
-extension Reusable {
+public extension Reusable {
     static var reuseIdentifier: String {
         return NSStringFromClass(self)
     }
@@ -22,10 +22,10 @@ extension UITableViewCell: Reusable { }
 extension UITableViewHeaderFooterView: Reusable { }
 extension UICollectionViewCell: Reusable { }
 
-protocol TableComponent: RawRepresentable where Self.RawValue == Int {
+public protocol TableComponent: RawRepresentable where Self.RawValue == Int {
     static var count: Int { get }
 }
-extension TableComponent where Self: CaseIterable {
+public extension TableComponent where Self: CaseIterable {
     @inlinable
     static var count: Int {
         return self.allCases.count
@@ -40,8 +40,8 @@ private extension TableComponent {
     }
 }
 
-protocol TableSection: TableComponent { }
-extension TableSection {
+public protocol TableSection: TableComponent { }
+public extension TableSection {
     init(_ section: Int) {
         self.init(value: section)
     }

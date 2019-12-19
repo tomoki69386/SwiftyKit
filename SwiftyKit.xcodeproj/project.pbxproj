@@ -11,6 +11,10 @@
 		B75976FA23AB388D002AB328 /* SwiftyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75976F923AB388D002AB328 /* SwiftyKitTests.swift */; };
 		B75976FC23AB388D002AB328 /* SwiftyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B75976EE23AB388D002AB328 /* SwiftyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B759770723AB38F2002AB328 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770623AB38F2002AB328 /* Reusable.swift */; };
+		B759770923AB3A1D002AB328 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770823AB3A1D002AB328 /* UIBarButtonItem+Extension.swift */; };
+		B759770B23AB3A38002AB328 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */; };
+		B759770D23AB3AF5002AB328 /* NibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770C23AB3AF5002AB328 /* NibInitializable.swift */; };
+		B759771023AB3D2A002AB328 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,10 @@
 		B75976F923AB388D002AB328 /* SwiftyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyKitTests.swift; sourceTree = "<group>"; };
 		B75976FB23AB388D002AB328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B759770623AB38F2002AB328 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		B759770823AB3A1D002AB328 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		B759770C23AB3AF5002AB328 /* NibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInitializable.swift; sourceTree = "<group>"; };
+		B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 		B75976ED23AB388D002AB328 /* SwiftyKit */ = {
 			isa = PBXGroup;
 			children = (
+				B759770E23AB3D1B002AB328 /* Common */,
 				B759770523AB38CE002AB328 /* Extension */,
 				B75976EE23AB388D002AB328 /* SwiftyKit.h */,
 				B75976EF23AB388D002AB328 /* Info.plist */,
@@ -92,9 +101,20 @@
 		B759770523AB38CE002AB328 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B759770623AB38F2002AB328 /* Reusable.swift */,
+				B759770823AB3A1D002AB328 /* UIBarButtonItem+Extension.swift */,
+				B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */,
+				B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		B759770E23AB3D1B002AB328 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B759770623AB38F2002AB328 /* Reusable.swift */,
+				B759770C23AB3AF5002AB328 /* NibInitializable.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B759770B23AB3A38002AB328 /* UICollectionView+Extension.swift in Sources */,
 				B759770723AB38F2002AB328 /* Reusable.swift in Sources */,
+				B759771023AB3D2A002AB328 /* UITableView+Extension.swift in Sources */,
+				B759770923AB3A1D002AB328 /* UIBarButtonItem+Extension.swift in Sources */,
+				B759770D23AB3AF5002AB328 /* NibInitializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
