@@ -86,10 +86,10 @@
 		B75976E123AB388D002AB328 = {
 			isa = PBXGroup;
 			children = (
-				B780C14C23AC489B00971DC0 /* Example.xcodeproj */,
 				B75976EC23AB388D002AB328 /* Products */,
 				B75976ED23AB388D002AB328 /* SwiftyKit */,
 				B75976F823AB388D002AB328 /* SwiftyKitTests */,
+				B780C14C23AC489B00971DC0 /* Example.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
