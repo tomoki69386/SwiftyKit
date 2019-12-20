@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B780C12B23AC489A00971DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C12A23AC489A00971DC0 /* AppDelegate.swift */; };
 		B780C12D23AC489A00971DC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C12C23AC489A00971DC0 /* SceneDelegate.swift */; };
-		B780C12F23AC489A00971DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C12E23AC489A00971DC0 /* ViewController.swift */; };
 		B780C13223AC489A00971DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780C13023AC489A00971DC0 /* Main.storyboard */; };
 		B780C13423AC489B00971DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B780C13323AC489B00971DC0 /* Assets.xcassets */; };
 		B780C13723AC489B00971DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B780C13523AC489B00971DC0 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		B780C15723AC491F00971DC0 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B780C15623AC491F00971DC0 /* NibTableViewCell.xib */; };
 		B780C15923AC492900971DC0 /* NibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15823AC492900971DC0 /* NibTableViewCell.swift */; };
 		B780C15B23AC493100971DC0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15A23AC493100971DC0 /* TableViewCell.swift */; };
+		B780C15E23AC4BF700971DC0 /* NibTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15D23AC4BF700971DC0 /* NibTableViewController.swift */; };
+		B780C16023AC4C1300971DC0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15F23AC4C1300971DC0 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,6 @@
 		B780C12723AC489A00971DC0 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B780C12A23AC489A00971DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B780C12C23AC489A00971DC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B780C12E23AC489A00971DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B780C13123AC489A00971DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B780C13323AC489B00971DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B780C13623AC489B00971DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		B780C15623AC491F00971DC0 /* NibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
 		B780C15823AC492900971DC0 /* NibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibTableViewCell.swift; sourceTree = "<group>"; };
 		B780C15A23AC493100971DC0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B780C15D23AC4BF700971DC0 /* NibTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibTableViewController.swift; sourceTree = "<group>"; };
+		B780C15F23AC4C1300971DC0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +90,8 @@
 				B780C15523AC491200971DC0 /* Common */,
 				B780C12A23AC489A00971DC0 /* AppDelegate.swift */,
 				B780C12C23AC489A00971DC0 /* SceneDelegate.swift */,
-				B780C12E23AC489A00971DC0 /* ViewController.swift */,
+				B780C15D23AC4BF700971DC0 /* NibTableViewController.swift */,
+				B780C15F23AC4C1300971DC0 /* TableViewController.swift */,
 				B780C13023AC489A00971DC0 /* Main.storyboard */,
 				B780C13323AC489B00971DC0 /* Assets.xcassets */,
 				B780C13523AC489B00971DC0 /* LaunchScreen.storyboard */,
@@ -219,10 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B780C15B23AC493100971DC0 /* TableViewCell.swift in Sources */,
-				B780C12F23AC489A00971DC0 /* ViewController.swift in Sources */,
+				B780C16023AC4C1300971DC0 /* TableViewController.swift in Sources */,
 				B780C15923AC492900971DC0 /* NibTableViewCell.swift in Sources */,
 				B780C12B23AC489A00971DC0 /* AppDelegate.swift in Sources */,
 				B780C12D23AC489A00971DC0 /* SceneDelegate.swift in Sources */,
+				B780C15E23AC4BF700971DC0 /* NibTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
