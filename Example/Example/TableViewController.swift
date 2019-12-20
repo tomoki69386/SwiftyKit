@@ -22,6 +22,8 @@ final class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(of: TableViewCell.self, for: indexPath)
+        let cell = tableView.dequeueReusableCell(of: TableViewCell.self, for: indexPath)
+        cell.textLabel?.text = "\(indexPath.section): \(indexPath.row)"
+        return cell
     }
 }
