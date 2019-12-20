@@ -6,4 +6,7 @@
 //  Copyright © 2019 tomoki_sun. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+final class NibTableViewCell: UITableViewCell {
+}
