@@ -62,6 +62,7 @@
 		B780C11823AC40A500971DC0 /* TableComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponentTests.swift; sourceTree = "<group>"; };
 		B780C11A23AC424900971DC0 /* UIBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTests.swift; sourceTree = "<group>"; };
 		B780C14C23AC489B00971DC0 /* Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Example.xcodeproj; path = Example/Example.xcodeproj; sourceTree = "<group>"; };
+		B780C16A23AC570400971DC0 /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				B75976EC23AB388D002AB328 /* Products */,
 				B75976ED23AB388D002AB328 /* SwiftyKit */,
 				B75976F823AB388D002AB328 /* SwiftyKitTests */,
+				B780C16923AC570400971DC0 /* scripts */,
 				B780C14C23AC489B00971DC0 /* Example.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +170,14 @@
 				B780C15423AC489D00971DC0 /* ExampleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B780C16923AC570400971DC0 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				B780C16A23AC570400971DC0 /* test.sh */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
