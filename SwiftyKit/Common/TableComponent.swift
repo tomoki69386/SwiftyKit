@@ -2,7 +2,7 @@
 //  TableComponent.swift
 //  SwiftyKit
 //
-//  Created by 築山朋紀 on 2019/12/20.
+//  Created by tomoki_sun on 2019/12/20.
 //  Copyright © 2019 tomoki_sun. All rights reserved.
 //
 

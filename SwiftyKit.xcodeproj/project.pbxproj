@@ -29,6 +29,20 @@
 			remoteGlobalIDString = B75976EA23AB388D002AB328;
 			remoteInfo = SwiftyKit;
 		};
+		B780C15123AC489D00971DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B780C14C23AC489B00971DC0 /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B780C12723AC489A00971DC0;
+			remoteInfo = Example;
+		};
+		B780C15323AC489D00971DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B780C14C23AC489B00971DC0 /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B780C13D23AC489B00971DC0;
+			remoteInfo = ExampleTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +61,7 @@
 		B780C11423AC403F00971DC0 /* TableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponent.swift; sourceTree = "<group>"; };
 		B780C11823AC40A500971DC0 /* TableComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponentTests.swift; sourceTree = "<group>"; };
 		B780C11A23AC424900971DC0 /* UIBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTests.swift; sourceTree = "<group>"; };
+		B780C14C23AC489B00971DC0 /* Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Example.xcodeproj; path = Example/Example.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +89,7 @@
 				B75976EC23AB388D002AB328 /* Products */,
 				B75976ED23AB388D002AB328 /* SwiftyKit */,
 				B75976F823AB388D002AB328 /* SwiftyKitTests */,
+				B780C14C23AC489B00971DC0 /* Example.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,7 +150,6 @@
 				B780C11223AC3EFF00971DC0 /* ReusableTests.swift */,
 				B780C11823AC40A500971DC0 /* TableComponentTests.swift */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -144,6 +159,15 @@
 				B780C11A23AC424900971DC0 /* UIBarButtonItemTests.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B780C14D23AC489B00971DC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B780C15223AC489D00971DC0 /* Example.app */,
+				B780C15423AC489D00971DC0 /* ExampleTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +250,12 @@
 			mainGroup = B75976E123AB388D002AB328;
 			productRefGroup = B75976EC23AB388D002AB328 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B780C14D23AC489B00971DC0 /* Products */;
+					ProjectRef = B780C14C23AC489B00971DC0 /* Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B75976EA23AB388D002AB328 /* SwiftyKit */,
@@ -233,6 +263,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B780C15223AC489D00971DC0 /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = B780C15123AC489D00971DC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B780C15423AC489D00971DC0 /* ExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExampleTests.xctest;
+			remoteRef = B780C15323AC489D00971DC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B75976E923AB388D002AB328 /* Resources */ = {
