@@ -39,7 +39,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="jk4-34-HTd" kind="push" trigger="accessoryAction" id="Nhy-59-gTx"/>
+                                            <segue destination="jk4-34-HTd" kind="push" id="Tqf-rj-6t2"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="qbC-Ck-S1L">
@@ -64,7 +64,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="41Y-hI-e2v" kind="push" trigger="accessoryAction" id="DTG-5b-xzy"/>
+                                            <segue destination="41Y-hI-e2v" kind="push" id="GcL-yA-3yZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
