@@ -16,7 +16,6 @@
 		B780C15723AC491F00971DC0 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B780C15623AC491F00971DC0 /* NibTableViewCell.xib */; };
 		B780C15923AC492900971DC0 /* NibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15823AC492900971DC0 /* NibTableViewCell.swift */; };
 		B780C15B23AC493100971DC0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15A23AC493100971DC0 /* TableViewCell.swift */; };
-		B780C15E23AC4BF700971DC0 /* NibTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15D23AC4BF700971DC0 /* NibTableViewController.swift */; };
 		B780C16023AC4C1300971DC0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C15F23AC4C1300971DC0 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		B780C15623AC491F00971DC0 /* NibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
 		B780C15823AC492900971DC0 /* NibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibTableViewCell.swift; sourceTree = "<group>"; };
 		B780C15A23AC493100971DC0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		B780C15D23AC4BF700971DC0 /* NibTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibTableViewController.swift; sourceTree = "<group>"; };
 		B780C15F23AC4C1300971DC0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 				B780C15523AC491200971DC0 /* Common */,
 				B780C12A23AC489A00971DC0 /* AppDelegate.swift */,
 				B780C12C23AC489A00971DC0 /* SceneDelegate.swift */,
-				B780C15D23AC4BF700971DC0 /* NibTableViewController.swift */,
 				B780C15F23AC4C1300971DC0 /* TableViewController.swift */,
 				B780C13023AC489A00971DC0 /* Main.storyboard */,
 				B780C13323AC489B00971DC0 /* Assets.xcassets */,
@@ -226,7 +223,6 @@
 				B780C15923AC492900971DC0 /* NibTableViewCell.swift in Sources */,
 				B780C12B23AC489A00971DC0 /* AppDelegate.swift in Sources */,
 				B780C12D23AC489A00971DC0 /* SceneDelegate.swift in Sources */,
-				B780C15E23AC4BF700971DC0 /* NibTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
