@@ -45,7 +45,7 @@ open class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
 
 extension TableViewCell {
     public static func register(to tableView: UITableView) {
-        tableView.register(TableViewCell<Maker>.self, forCellReuseIdentifier: Maker.View.reuseIdentifier)
+        tableView.register(self, forCellReuseIdentifier: Maker.View.reuseIdentifier)
     }
     public static func dequeue(from tableView: UITableView, for indexPath: IndexPath, closure: ((Maker.View) -> Void)? = nil) -> TableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Maker.View.reuseIdentifier, for: indexPath) as! TableViewCell

@@ -43,7 +43,7 @@ public class CollectionViewCell<Maker: BackingViewMaker>: UICollectionViewCell {
 
 extension CollectionViewCell {
     public static func register(to collectionView: UICollectionView) {
-        collectionView.register(CollectionViewCell<Maker>.self, forCellWithReuseIdentifier: Maker.View.reuseIdentifier)
+        collectionView.register(self, forCellWithReuseIdentifier: Maker.View.reuseIdentifier)
     }
     public static func dequeue(from collectionView: UICollectionView, for indexPath: IndexPath, closure: ((Maker.View) -> Void)? = nil) -> CollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Maker.View.reuseIdentifier, for: indexPath) as! CollectionViewCell
