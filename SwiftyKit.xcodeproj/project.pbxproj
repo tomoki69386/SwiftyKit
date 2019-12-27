@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71CB6EF23B5CFE20041C5C9 /* BackingViewMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6EE23B5CFE20041C5C9 /* BackingViewMaker.swift */; };
+		B71CB6F323B5D1570041C5C9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6F223B5D1570041C5C9 /* TableViewCell.swift */; };
 		B75976F523AB388D002AB328 /* SwiftyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75976EB23AB388D002AB328 /* SwiftyKit.framework */; };
 		B75976FA23AB388D002AB328 /* SwiftyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75976F923AB388D002AB328 /* SwiftyKitTests.swift */; };
 		B75976FC23AB388D002AB328 /* SwiftyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B75976EE23AB388D002AB328 /* SwiftyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B759770723AB38F2002AB328 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770623AB38F2002AB328 /* Reusable.swift */; };
 		B759770923AB3A1D002AB328 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770823AB3A1D002AB328 /* UIBarButtonItem+Extension.swift */; };
-		B759770B23AB3A38002AB328 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */; };
 		B759770D23AB3AF5002AB328 /* NibInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770C23AB3AF5002AB328 /* NibInitializable.swift */; };
-		B759771023AB3D2A002AB328 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */; };
 		B780C11323AC3EFF00971DC0 /* ReusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11223AC3EFF00971DC0 /* ReusableTests.swift */; };
 		B780C11523AC403F00971DC0 /* TableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11423AC403F00971DC0 /* TableComponent.swift */; };
 		B780C11923AC40A500971DC0 /* TableComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C11823AC40A500971DC0 /* TableComponentTests.swift */; };
@@ -46,17 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B71CB6EE23B5CFE20041C5C9 /* BackingViewMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackingViewMaker.swift; sourceTree = "<group>"; };
+		B71CB6F223B5D1570041C5C9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B75976EB23AB388D002AB328 /* SwiftyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75976EE23AB388D002AB328 /* SwiftyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyKit.h; sourceTree = "<group>"; };
 		B75976EF23AB388D002AB328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B75976F423AB388D002AB328 /* SwiftyKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75976F923AB388D002AB328 /* SwiftyKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyKitTests.swift; sourceTree = "<group>"; };
 		B75976FB23AB388D002AB328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B759770623AB38F2002AB328 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		B759770823AB3A1D002AB328 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
-		B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		B759770C23AB3AF5002AB328 /* NibInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInitializable.swift; sourceTree = "<group>"; };
-		B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		B780C11223AC3EFF00971DC0 /* ReusableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTests.swift; sourceTree = "<group>"; };
 		B780C11423AC403F00971DC0 /* TableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponent.swift; sourceTree = "<group>"; };
 		B780C11823AC40A500971DC0 /* TableComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableComponentTests.swift; sourceTree = "<group>"; };
@@ -130,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				B759770823AB3A1D002AB328 /* UIBarButtonItem+Extension.swift */,
-				B759770A23AB3A38002AB328 /* UICollectionView+Extension.swift */,
-				B759770F23AB3D2A002AB328 /* UITableView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -140,8 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				B759770C23AB3AF5002AB328 /* NibInitializable.swift */,
-				B759770623AB38F2002AB328 /* Reusable.swift */,
 				B780C11423AC403F00971DC0 /* TableComponent.swift */,
+				B71CB6EE23B5CFE20041C5C9 /* BackingViewMaker.swift */,
+				B71CB6F223B5D1570041C5C9 /* TableViewCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -314,9 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B780C11523AC403F00971DC0 /* TableComponent.swift in Sources */,
-				B759770B23AB3A38002AB328 /* UICollectionView+Extension.swift in Sources */,
-				B759770723AB38F2002AB328 /* Reusable.swift in Sources */,
-				B759771023AB3D2A002AB328 /* UITableView+Extension.swift in Sources */,
+				B71CB6F323B5D1570041C5C9 /* TableViewCell.swift in Sources */,
+				B71CB6EF23B5CFE20041C5C9 /* BackingViewMaker.swift in Sources */,
 				B759770923AB3A1D002AB328 /* UIBarButtonItem+Extension.swift in Sources */,
 				B759770D23AB3AF5002AB328 /* NibInitializable.swift in Sources */,
 			);
