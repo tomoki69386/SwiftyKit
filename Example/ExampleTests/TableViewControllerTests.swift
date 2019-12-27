@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SwiftyKit
 @testable import Example
 
 class TableViewControllerTests: XCTestCase {
@@ -20,24 +21,36 @@ class TableViewControllerTests: XCTestCase {
     
     func testTableViewSectionCount() {
         let sectionCount = viewController.numberOfSections(in: viewController.tableView)
-        XCTAssertEqual(sectionCount, 2)
+        XCTAssertEqual(sectionCount, 3)
     }
-    
-    func testTableViewSectionOneRowCount() {
+    func testTableViewSectionFirstRowCount() {
         let rowCount = viewController.tableView(viewController.tableView, numberOfRowsInSection: 0)
-        XCTAssertEqual(rowCount, 5)
+        XCTAssertEqual(rowCount, 2)
     }
-    
-    func testTableViewSectionTwoRowCount() {
+    func testTableViewSectionSecondRowCount() {
         let rowCount = viewController.tableView(viewController.tableView, numberOfRowsInSection: 1)
-        XCTAssertEqual(rowCount, 5)
+        XCTAssertEqual(rowCount, 2)
     }
-    
-    func testTableViewCellNotNil() {
-        let nibCell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? NibTableViewCell
-        XCTAssertNotNil(nibCell)
-        
-        let codeCell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 1)) as? TableViewCell
-        XCTAssertNotNil(codeCell)
+    func testTableViewSectionThaadRowCount() {
+        let rowCount = viewController.tableView(viewController.tableView, numberOfRowsInSection: 2)
+        XCTAssertEqual(rowCount, 2)
+    }
+    func testTableViewCellTextLabelSectionFirst() {
+        let cell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? TableViewCell<CommonView>
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.backed.textLabel.text, "0: 0")
+        XCTAssertEqual(cell?.backed.textLabel.textAlignment, .left)
+    }
+    func testTableViewCellTextLabelSectionSecond() {
+        let cell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 1)) as? TableViewCell<CommonView>
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.backed.textLabel.text, "1: 0")
+        XCTAssertEqual(cell?.backed.textLabel.textAlignment, .center)
+    }
+    func testTableViewCellTextLabelSectionThaad() {
+        let cell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 2)) as? TableViewCell<CommonView>
+        XCTAssertNotNil(cell)
+        XCTAssertEqual(cell?.backed.textLabel.text, "2: 0")
+        XCTAssertEqual(cell?.backed.textLabel.textAlignment, .right)
     }
 }
