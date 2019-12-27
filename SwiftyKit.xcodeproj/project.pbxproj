@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B71CB6EF23B5CFE20041C5C9 /* BackingViewMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6EE23B5CFE20041C5C9 /* BackingViewMaker.swift */; };
 		B71CB6F323B5D1570041C5C9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6F223B5D1570041C5C9 /* TableViewCell.swift */; };
+		B71CB6F523B5D8820041C5C9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71CB6F423B5D8820041C5C9 /* CollectionViewCell.swift */; };
 		B75976F523AB388D002AB328 /* SwiftyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75976EB23AB388D002AB328 /* SwiftyKit.framework */; };
 		B75976FA23AB388D002AB328 /* SwiftyKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75976F923AB388D002AB328 /* SwiftyKitTests.swift */; };
 		B75976FC23AB388D002AB328 /* SwiftyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B75976EE23AB388D002AB328 /* SwiftyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		B71CB6EE23B5CFE20041C5C9 /* BackingViewMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackingViewMaker.swift; sourceTree = "<group>"; };
 		B71CB6F223B5D1570041C5C9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B71CB6F423B5D8820041C5C9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B75976EB23AB388D002AB328 /* SwiftyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75976EE23AB388D002AB328 /* SwiftyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyKit.h; sourceTree = "<group>"; };
 		B75976EF23AB388D002AB328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B780C11423AC403F00971DC0 /* TableComponent.swift */,
 				B71CB6EE23B5CFE20041C5C9 /* BackingViewMaker.swift */,
 				B71CB6F223B5D1570041C5C9 /* TableViewCell.swift */,
+				B71CB6F423B5D8820041C5C9 /* CollectionViewCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				B780C11523AC403F00971DC0 /* TableComponent.swift in Sources */,
 				B71CB6F323B5D1570041C5C9 /* TableViewCell.swift in Sources */,
+				B71CB6F523B5D8820041C5C9 /* CollectionViewCell.swift in Sources */,
 				B71CB6EF23B5CFE20041C5C9 /* BackingViewMaker.swift in Sources */,
 				B759770923AB3A1D002AB328 /* UIBarButtonItem+Extension.swift in Sources */,
 				B759770D23AB3AF5002AB328 /* NibInitializable.swift in Sources */,
