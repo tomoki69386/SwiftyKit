@@ -1,5 +1,5 @@
 //
-//  TableViewCell.swift
+//  TableViewHeaderFooterView.swift
 //  SwiftyKit
 //
 //  Created by 築山朋紀 on 2019/12/27.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-open class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
-    
+public class TableViewHeaderFooterView<Maker: BackingViewMaker>: UITableViewHeaderFooterView {
     public let backed: Maker.View
-    
-    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    public override init(reuseIdentifier: String?) {
         let backingView = Maker.makeBackedView()
         self.backed = backingView
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        super.init(reuseIdentifier: reuseIdentifier)
         backingView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(backingView)
         NSLayoutConstraint.activate([
@@ -43,12 +41,12 @@ open class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
     }
 }
 
-extension TableViewCell {
+extension TableViewHeaderFooterView {
     public static func register(to tableView: UITableView) {
-        tableView.register(TableViewCell<Maker>.self, forCellReuseIdentifier: Maker.View.reuseIdentifier)
+        tableView.register(TableViewHeaderFooterView<Maker>.self, forHeaderFooterViewReuseIdentifier: Maker.View.reuseIdentifier)
     }
-    public static func dequeue(from tableView: UITableView, for indexPath: IndexPath, closure: ((Maker.View) -> Void)? = nil) -> TableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Maker.View.reuseIdentifier, for: indexPath) as! TableViewCell
+    public static func dequeue(from tableView: UITableView, for indexPath: IndexPath, closure: ((Maker.View) -> Void)? = nil) -> TableViewHeaderFooterView {
+        let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: Maker.View.reuseIdentifier) as! TableViewHeaderFooterView
         cell.update(closure)
         return cell
     }
