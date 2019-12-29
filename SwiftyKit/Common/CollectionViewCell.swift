@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CollectionViewCell<Maker: BackingViewMaker>: UICollectionViewCell {
+public final class CollectionViewCell<Maker: BackingViewMaker>: UICollectionViewCell {
     public let backed: Maker.View
     public override init(frame: CGRect) {
         let backingView = Maker.makeBackedView()
@@ -34,7 +34,7 @@ public class CollectionViewCell<Maker: BackingViewMaker>: UICollectionViewCell {
         backed.prepareForReuse()
     }
     
-    internal func update(_ closure: ((Maker.View) -> Void)?) {
+    public func update(_ closure: ((Maker.View) -> Void)?) {
         if let closure = closure {
             closure(backed)
         }

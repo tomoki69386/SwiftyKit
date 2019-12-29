@@ -22,7 +22,7 @@ public enum CollectionViewSupplementaryKind {
     }
 }
 
-public class CollectionReusableView<Maker: BackingViewMaker>: UICollectionReusableView {
+public final class CollectionReusableView<Maker: BackingViewMaker>: UICollectionReusableView {
     public let backed: Maker.View
     public override init(frame: CGRect) {
         let backingView = Maker.makeBackedView()
@@ -48,7 +48,7 @@ public class CollectionReusableView<Maker: BackingViewMaker>: UICollectionReusab
         backed.prepareForReuse()
     }
     
-    internal func update(_ closure: ((Maker.View) -> Void)?) {
+    public func update(_ closure: ((Maker.View) -> Void)?) {
         if let closure = closure {
             closure(backed)
         }

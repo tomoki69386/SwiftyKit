@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
+public final class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
     
     public let backed: Maker.View
     
@@ -27,7 +27,7 @@ open class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
     }
     
     @available(*, unavailable)
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -36,7 +36,7 @@ open class TableViewCell<Maker: BackingViewMaker>: UITableViewCell {
         backed.prepareForReuse()
     }
     
-    internal func update(_ closure: ((Maker.View) -> Void)?) {
+    public func update(_ closure: ((Maker.View) -> Void)?) {
         if let closure = closure {
             closure(backed)
         }

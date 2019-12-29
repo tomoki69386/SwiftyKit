@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TableViewHeaderFooterView<Maker: BackingViewMaker>: UITableViewHeaderFooterView {
+public final class TableViewHeaderFooterView<Maker: BackingViewMaker>: UITableViewHeaderFooterView {
     public let backed: Maker.View
     public override init(reuseIdentifier: String?) {
         let backingView = Maker.makeBackedView()
@@ -25,7 +25,7 @@ public class TableViewHeaderFooterView<Maker: BackingViewMaker>: UITableViewHead
     }
     
     @available(*, unavailable)
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
