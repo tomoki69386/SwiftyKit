@@ -13,12 +13,12 @@ public protocol TableComponent: RawRepresentable where Self.RawValue == Int {
 }
 public extension TableComponent where Self: CaseIterable {
     @inlinable
-    public static var count: Int {
+    static var count: Int {
         return self.allCases.count
     }
 }
 private extension TableComponent {
-   public  init(value: Int) {
+    init(value: Int) {
         let component = Self.init(rawValue: value) ?? {
             return Self.init(rawValue: 0)!
         }()
@@ -28,7 +28,7 @@ private extension TableComponent {
 
 public protocol TableSection: TableComponent { }
 public extension TableSection {
-    public init(_ section: Int) {
+   init(_ section: Int) {
         self.init(value: section)
     }
 }
