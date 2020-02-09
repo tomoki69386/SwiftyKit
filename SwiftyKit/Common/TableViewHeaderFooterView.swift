@@ -45,7 +45,7 @@ extension TableViewHeaderFooterView {
     public static func register(to tableView: UITableView) {
         tableView.register(self, forHeaderFooterViewReuseIdentifier: Maker.View.reuseIdentifier)
     }
-    public static func dequeue(from tableView: UITableView, for indexPath: IndexPath, closure: ((Maker.View) -> Void)? = nil) -> TableViewHeaderFooterView {
+    public static func dequeue(from tableView: UITableView, closure: ((Maker.View) -> Void)? = nil) -> TableViewHeaderFooterView {
         let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: Maker.View.reuseIdentifier) as! TableViewHeaderFooterView
         cell.update(closure)
         return cell
